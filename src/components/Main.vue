@@ -38,7 +38,7 @@
     <div id="services" class="pt-5">
         <div class="container d-flex flex-column">
             <div class="row">
-                <h3 class="col-12 text-center">
+                <h3 class="col-12 text-center"> 
                     Speciality Services
                 </h3>
             </div>
