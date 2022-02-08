@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <Header/>
     <Main/>
     <Footer/>
@@ -28,4 +28,5 @@ export default {
 font-family: 'Source Code Pro', monospace;
 font-family: 'Work Sans', sans-serif;
 }
+
 </style>

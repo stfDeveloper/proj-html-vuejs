@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-between flex-row align-items-center" id="header">
+  <div class="d-flex justify-content-between align-items-center m0" id="header">
     <div class="logo">
       <img src="../assets/style/logo.png" alt="" />
     </div>
@@ -24,15 +24,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 #header{
     width: 100%;
-    height: 60px;
+    height: 80px;
+    padding: 30px;
     #nav{
         display: flex;
-        flex-direction: row;
-        align-items: center;
         div{
-            margin-left: 50px;
+            padding:20px;
         }
     }
 }
