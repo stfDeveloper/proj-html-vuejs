@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center m0" id="header">
+  <div class="d-flex justify-content-between align-items-center" id="header">
     <div class="logo">
-      <img src="../assets/style/logo.png" alt="" />
+      <img src="../assets/style/logo.png" alt=""/>
     </div>
     <div id="nav">
       <div>HOME</div>
@@ -28,7 +28,8 @@ export default {
 #header{
     width: 100%;
     height: 80px;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     #nav{
         display: flex;
         div{
