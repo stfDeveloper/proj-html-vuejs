@@ -22,11 +22,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "./assets/style/global.scss";
 *{
 font-family: 'Source Code Pro', monospace;
 font-family: 'Work Sans', sans-serif;
+}
+button{
+  background-color: $viking;
+  color: $white;
+  border: 0;
 }
 
 </style>

@@ -1,11 +1,7 @@
 <template>
 <div>
 <!-- jumbo -->
-  <div id="jumbo">
-      <div class="jumboText">
-          Right People. Right Investments.
-      </div>
-  </div>
+    <Slider/>
     <!-- sponsor -->
   <div id="sponsorSection" class="d-flex flex-row justify-content-between m4">
       <div><img src="../assets/images/client-logo-7-200x87.png" alt=""></div>
@@ -27,7 +23,7 @@
                 </span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla rerum atque obcaecati unde molestiae possimus eius magnam hic sunt consequuntur.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis laboriosam dolor!</p>
-                <button>Learn More!</button>
+                <button class="rounded-pill w-25">Learn More!</button>
             </div>
             <div class="col-6 align-self-center mx4" id="graph">
                 <img src="../assets/images/graph.jpg" alt="">
@@ -53,6 +49,7 @@
         <div class="serviceCards d-flex justify-content-center ">
             <div class="serviceCard d-flex flex-column">
                 <div class="serviceImage1">
+                     <i class="fa-solid fa-globe"></i>
                 </div>
                 <div class="mx-5">
                     <h4>
@@ -67,6 +64,7 @@
 
             <div class="serviceCard d-flex flex-column"> 
                 <div class="serviceImage2">
+                    <i class="fa-solid fa-gem"></i>
                 </div>
                 <div class="mx-5">
                     <h4>
@@ -81,6 +79,7 @@
 
             <div class="serviceCard d-flex flex-column">
                  <div class="serviceImage3">
+                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div class="mx-5">
                     <h4>
@@ -90,7 +89,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus eius provident, molestiae cupiditate harum ut.
                     </p>
                 </div>
-                <button class="mt-auto p-1">Learn More</button>
+                <button class="mt-auto p-1 ">Learn More</button>
             </div>
         </div>
     </div>
@@ -104,7 +103,7 @@
                         <div class="imgContent">
                         <p>Investment Numbers</p>
                         <h2>Making An Impact In Our Communities</h2>
-                        <button>LEARN MORE</button>
+                        <button class="rounded-pill">LEARN MORE</button>
                         </div>
                     </div>
                     
@@ -224,7 +223,7 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, cum pariatur?
             </div>
             <div class="col-12 d-flex justify-content-center my-2">
-                <button>
+                <button class="rounded-pill w-25">
                     LET'S TALK
                 </button>
             </div>
@@ -232,35 +231,22 @@
     </div>
 </div>
 
+
 </div>
 </template>
 
 <script>
+import Slider from '../commons/Slider.vue'
 export default {
-    name:"Main"
-
+    name:"Main",
+    components:{
+         Slider
+        }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../assets/style/global.scss";
-
-#jumbo{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 700px;
-    background:url(../assets/images/home_finance_slider_bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    .jumboText{
-        align-self: center;
-        color: $white;
-        font-size: 40px;
-        font-family:monospace;
-        text-align: center;
-    }
-}
     #sponsorSection{
         background-color: $haze;
         width: 100vw;
@@ -289,9 +275,24 @@ export default {
     #services{
         background-color: $haze;
         width: 100%;
-        height:600px;
+        height:650px;
         font-size: 15px;
         padding: 50px;
+    }
+    .serviceImage1{
+        color: $blue;
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+     .serviceImage2{
+        color: $blue;
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+     .serviceImage3{
+        color: $blue;
+        font-size: 50px;
+        padding-bottom: 10px;
     }
     .serviceCard{
         background-color: $white;
@@ -305,22 +306,6 @@ export default {
         button{
             width: 100%;
         }
-    }
-    .serviceImage1:before{
-        content: "\1F310";
-        font-size: 80px; 
-
-
-    }
-    .serviceImage2:before{
-        content: "\1F48E";
-        font-size: 80px;
-
-    }
-    .serviceImage3:before{
-        content: "\1F4C8";
-        font-size: 80px;
-
     }
     .percent{
         background-color: $white;
@@ -350,6 +335,7 @@ export default {
 
         }
     }
+
     .feedbkack{
         width: 100%;
         height: 150px;
